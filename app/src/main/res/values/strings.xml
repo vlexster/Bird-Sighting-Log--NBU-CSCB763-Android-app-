@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Bird Sighting Tracker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Created by Vladislav Tachev F59631</string>
+    <string name="title_activity_add">Add a new sighting</string>
+    <string name="lblLocation">Location:</string>
+    <string name="addSightBtn">Add this sighting to the log</string>
+    <string name="lblBName">Name of bird species seen:</string>
+    <string name="lblBCount">Qty of the seen species:</string>
+    <string name="bNameFld">bName</string>
+    <string name="delBtn">delete</string>
+    <string name="bCountFld">bCount</string>
+    <string name="locFld">Location</string>
+    <string name="timeFld">Time</string>
+    <string name="addBtn">Add a new sighting</string>
+</resources>

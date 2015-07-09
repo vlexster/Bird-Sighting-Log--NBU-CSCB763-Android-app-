@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.vladislavtachev.cscb763.AddActivity"
+    style="@android:style/Theme.Material" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lblBName"
+        android:id="@+id/lblBName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bNameFld"
+        android:layout_below="@+id/lblBName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lblBCount"
+        android:id="@+id/lblBCount"
+        android:layout_alignBottom="@+id/bCountFld"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/bCountFld"
+        android:layout_below="@+id/bNameFld"
+        android:layout_alignRight="@+id/bNameFld"
+        android:layout_alignEnd="@+id/bNameFld"
+        android:layout_toEndOf="@+id/lblBCount"
+        android:layout_toRightOf="@+id/lblBCount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lblLocation"
+        android:id="@+id/lblLocation"
+        android:layout_alignBottom="@+id/locFld"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locFld"
+        android:layout_below="@+id/bCountFld"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/lblLocation"
+        android:layout_toRightOf="@+id/lblLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addSightBtn"
+        android:id="@+id/addSightBtn"
+        android:layout_below="@+id/lblLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <ListView
+        android:layout_width="10px"
+        android:layout_height="10px"
+        android:id="@android:id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/locFld"
+        android:layout_alignEnd="@+id/locFld" />
+</RelativeLayout>

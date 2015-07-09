@@ -1,0 +1,126 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=8112, tid=11004
+#
+# JRE version:  (7.0_71-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.71-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000030c0800):  JavaThread "Unknown thread" [_thread_in_vm, id=11004, stack(0x0000000002f00000,0x0000000003000000)]
+
+Stack: [0x0000000002f00000,0x0000000003000000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000030c0800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=11004, stack(0x0000000002f00000,0x0000000003000000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff65b4e0000 - 0x00007ff65b513000 	C:\Program Files\Java\jdk1.7.0_71\bin\java.exe
+0x00007ffc430a0000 - 0x00007ffc4324c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffc40be0000 - 0x00007ffc40d1e000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ffc402c0000 - 0x00007ffc403d5000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ffc3ed40000 - 0x00007ffc3edce000 	C:\Windows\system32\apphelp.dll
+0x00007ffc2d710000 - 0x00007ffc2d763000 	C:\Windows\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffc42af0000 - 0x00007ffc42b9a000 	C:\Windows\system32\msvcrt.dll
+0x00007ffc3ffd0000 - 0x00007ffc3fffe000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x00007ffc42a90000 - 0x00007ffc42ae4000 	C:\Windows\system32\SHLWAPI.dll
+0x00007ffc42d00000 - 0x00007ffc42e77000 	C:\Windows\system32\USER32.dll
+0x00007ffc40720000 - 0x00007ffc408b4000 	C:\Windows\system32\ole32.dll
+0x00007ffc40d20000 - 0x00007ffc42238000 	C:\Windows\system32\SHELL32.dll
+0x00007ffc3f740000 - 0x00007ffc3f761000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffc42980000 - 0x00007ffc42a2a000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ffc38570000 - 0x00007ffc3858e000 	C:\Windows\SYSTEM32\MPR.dll
+0x00007ffc42ef0000 - 0x00007ffc43031000 	C:\Windows\system32\RPCRT4.dll
+0x00007ffc42a30000 - 0x00007ffc42a89000 	C:\Windows\SYSTEM32\sechost.dll
+0x00007ffc42240000 - 0x00007ffc42451000 	C:\Windows\SYSTEM32\combase.dll
+0x00007ffc42ba0000 - 0x00007ffc42cf1000 	C:\Windows\system32\GDI32.dll
+0x00007ffc401f0000 - 0x00007ffc40205000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ffc3e6f0000 - 0x00007ffc3e7a2000 	C:\Windows\SYSTEM32\SHCORE.dll
+0x00007ffc42480000 - 0x00007ffc424b6000 	C:\Windows\system32\IMM32.DLL
+0x00007ffc42820000 - 0x00007ffc42972000 	C:\Windows\system32\MSCTF.dll
+0x00007ffc401a0000 - 0x00007ffc401d2000 	C:\Windows\system32\nvinitx.dll
+0x00007ffc40190000 - 0x00007ffc4019a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x00007ffc3e0d0000 - 0x00007ffc3e102000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x00007ffc409f0000 - 0x00007ffc40bca000 	C:\Windows\system32\SETUPAPI.dll
+0x00007ffc40440000 - 0x00007ffc4048f000 	C:\Windows\system32\CFGMGR32.dll
+0x00007ffc3e0a0000 - 0x00007ffc3e0c2000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x00007ffc3e270000 - 0x00007ffc3e4ea000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_6240b9c7ecbd0bda\COMCTL32.dll
+0x0000000058330000 - 0x0000000058402000 	C:\Program Files\Java\jdk1.7.0_71\jre\bin\msvcr100.dll
+0x0000000057b50000 - 0x0000000058323000 	C:\Program Files\Java\jdk1.7.0_71\jre\bin\server\jvm.dll
+0x00007ffc2b8f0000 - 0x00007ffc2b8f9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffc3dc00000 - 0x00007ffc3dc22000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffc42810000 - 0x00007ffc42817000 	C:\Windows\system32\PSAPI.DLL
+0x00007ffc43040000 - 0x00007ffc4309a000 	C:\Windows\system32\WS2_32.dll
+0x00007ffc3db50000 - 0x00007ffc3db7a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffc42ee0000 - 0x00007ffc42ee9000 	C:\Windows\system32\NSI.dll
+0x00007ffc3efa0000 - 0x00007ffc3efc8000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x0000000058650000 - 0x000000005865f000 	C:\Program Files\Java\jdk1.7.0_71\jre\bin\verify.dll
+0x00000000584e0000 - 0x0000000058508000 	C:\Program Files\Java\jdk1.7.0_71\jre\bin\java.dll
+0x00000000584c0000 - 0x00000000584d5000 	C:\Program Files\Java\jdk1.7.0_71\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Xmx1024M -Dfile.encoding=windows-1251 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: com.android.dx.command.Main --dex --output C:\Users\Vlex\AndroidStudioProjects\CSCB763\app\build\intermediates\pre-dexed\debug\classes-0afccb4037cdbabfa8b0e88fc4e4d2c0b198de58.jar C:\Users\Vlex\AndroidStudioProjects\CSCB763\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\GtkSharp\2.12\bin
+USERNAME=Vlex
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 16685764k(4679100k free), swap 16685764k(4988k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.71-b01) for windows-amd64 JRE (1.7.0_71-b14), built on Sep 26 2014 16:16:12 by "java_re" with unknown MS VC++:1600
+
+time: Thu Jul 02 15:03:52 2015
+elapsed time: 0 seconds
+
