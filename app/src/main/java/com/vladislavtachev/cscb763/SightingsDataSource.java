@@ -6,13 +6,14 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Created by Vladislav Tachev on 6/29/2015.
  * All rights reserved.
  */
+
 public class SightingsDataSource {
 
     //DB info
@@ -43,7 +44,6 @@ public class SightingsDataSource {
         Cursor cursor = database.query(MySQLiteHelper.TABLE_SIGHTINGS, allColumns, MySQLiteHelper.COL_ID
                 + " = " + insertId, null, null, null, null);
         cursor.moveToFirst();
-        Sighting newSighting = cursorToSighting(cursor);
         cursor.close();
     }
 
@@ -55,19 +55,6 @@ public class SightingsDataSource {
         sighting.setbName(cursor.getString(3));
         sighting.setbCount(cursor.getInt(4));
         return sighting;
-    }
-
-    public List<Sighting> getAllSightingsAsList(){
-        List<Sighting> sightings = new ArrayList<Sighting>();
-        Cursor cursor = database.query(MySQLiteHelper.TABLE_SIGHTINGS, allColumns, null, null, null, null, null);
-        cursor.moveToFirst();
-        while (!cursor.isAfterLast()) {
-            Sighting sighting = cursorToSighting(cursor);
-            sightings.add(sighting);
-            cursor.moveToNext();
-        }
-        cursor.close();
-        return sightings;
     }
 
     public Cursor getAllSightingsAsCursor(){
