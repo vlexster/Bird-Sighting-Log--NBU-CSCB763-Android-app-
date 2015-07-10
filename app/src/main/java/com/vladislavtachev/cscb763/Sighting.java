@@ -1,8 +1,5 @@
 package com.vladislavtachev.cscb763;
 
-import android.view.View;
-import android.widget.Button;
-
 /**
  * Created by Vladislav Tachev on 6/29/2015.
  * All rights reserved.
@@ -21,8 +18,7 @@ public class Sighting {
         setbCount(bCount);
     }
 
-    public Sighting(){
-    }
+    public Sighting(){}
 
     public long getId() {
         return id;
@@ -66,14 +62,6 @@ public class Sighting {
 
     @Override
     public String toString(){
-        //TODO set the data model properly
         return bName;
     }
-
-//    public void toggleDelete(){
-//        if (del.isShown()) del.setVisibility(View.VISIBLE);
-//        else del.setVisibility(View.INVISIBLE);
-//    }
-
-
 }

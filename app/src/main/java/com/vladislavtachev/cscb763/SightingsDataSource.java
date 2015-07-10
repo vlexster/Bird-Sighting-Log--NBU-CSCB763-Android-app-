@@ -17,7 +17,6 @@ public class SightingsDataSource {
 
     //DB info
     private SQLiteDatabase database;
-//    private MySQLiteHelper dbHelper;
     private SQLiteOpenHelper dbHelper;
     private String[] allColumns = { MySQLiteHelper.COL_ID, MySQLiteHelper.COL_LOCATION,
             MySQLiteHelper.COL_TIME, MySQLiteHelper.COL_BNAME, MySQLiteHelper.COL_BCOUNT };
@@ -46,7 +45,6 @@ public class SightingsDataSource {
         cursor.moveToFirst();
         Sighting newSighting = cursorToSighting(cursor);
         cursor.close();
-//        return newSighting;
     }
 
     private Sighting cursorToSighting(Cursor cursor){
@@ -75,11 +73,9 @@ public class SightingsDataSource {
     public Cursor getAllSightingsAsCursor(){
         Cursor cursor = database.rawQuery("SELECT * FROM sightings", null);
         return cursor;
-
     }
 
     public void deleteEntry(long id){
-//        database.rawQuery("DELETE FROM sightings WHERE _id = "+id, null);
         int resu = database.delete("sightings", "_id = ?", new String[]{String.valueOf(id)});
         Log.v("Database", "Deleted rows: " + resu);
     }

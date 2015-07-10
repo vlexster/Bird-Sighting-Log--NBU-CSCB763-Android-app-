@@ -42,18 +42,7 @@ public class SightCursAdapter extends CursorAdapter {
         tvTime.setText(String.valueOf(new java.util.Date(time*1000)));
         tvBName.setText(bName);
         tvBCount.setText(String.valueOf(bCount));
-//        delBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-
     }
-//
-//    public void toggleDelete(){
-//        delBtn.setVisibility(View.VISIBLE);
-//    }
 
     public void deleteItem(long itemID, Context context){
         SightingsDataSource dataSource = new SightingsDataSource(context);
