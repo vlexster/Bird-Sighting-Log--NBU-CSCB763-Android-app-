@@ -8,6 +8,7 @@ import android.content.Context;
  * Created by Vladislav Tachev on 6/29/2015.
  * All rights reserved.
  */
+
 public class MySQLiteHelper extends SQLiteOpenHelper{
 
     public final static String DB_NAME = "sightings.db";
@@ -41,5 +42,4 @@ public class MySQLiteHelper extends SQLiteOpenHelper{
         database.execSQL("DROP TABLE IF EXISTS " + TABLE_SIGHTINGS);
         onCreate(database);
     }
-
 }

@@ -4,6 +4,7 @@ package com.vladislavtachev.cscb763;
  * Created by Vladislav Tachev on 6/29/2015.
  * All rights reserved.
  */
+
 public class Sighting {
     private long id;
     private String location;
