@@ -14,12 +14,15 @@ import android.widget.Toast;
  * Created by Vladislav Tachev on 7/2/2015.
  * All rights reserved.
  */
+
 public class SightCursAdapter extends CursorAdapter {
+
+    static Button delBtn;
+
     public SightCursAdapter(Context context, Cursor cursor) {
         super(context, cursor, 0);
     }
 
-    static Button delBtn;
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent){
         return LayoutInflater.from(context).inflate(R.layout.layout_item, parent, false);
